@@ -37,8 +37,7 @@ body {
 #Page .Livedata {
     height: 100%;
     margin-right:0%;
-    -webkit-text-fill-color: white;
-
+    -webkit-text-fill-color: wheat;
     max-height: 50; 
     margin: 0 0 0 0;
     display: inline-block;

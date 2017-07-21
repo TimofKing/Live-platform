@@ -7,7 +7,7 @@ watch = require('gulp-watch')     //引入watch套件
 
 gulp.task('serverGO', function () {
     connect.server({
-        root: 'build/LOL_Live.html', //設定開啟位置
+        root: 'build', //設定開啟位置
         livereload: true, //開啟livereload
         port: 8787 //設定預設port為8787
     });
@@ -34,6 +34,14 @@ gulp.task('sassGO', function () {
     });
 });
 
+gulp.task('cssGO', function () {
+    return watch('build/**/*.css', function () {
+        console.log('css Done');
+        gulp.src('build/**/*.css') 
+            .pipe(connect.reload());                 //利用connect套件刷新頁面
+    });
+});
+
 gulp.task('htmlGO', function () {
     return watch('build/**/*.html', function () {
         gulp.src('build/**/*.html') 
@@ -47,5 +55,5 @@ gulp.task('htmlGO', function () {
 //     gulp.watch('src/**/*.js', ['ConcatAndUglify']);
 //     gulp.watch('build/**/*.html', ['htmlGO']);
 // });
-gulp.task('default', ['ConcatAndUglify', 'sassGO', 'serverGO', 'htmlGO']);
+gulp.task('default', ['ConcatAndUglify', 'sassGO', 'serverGO', 'htmlGO','cssGO']);
 // gulp.task('default', ['ConcatAndUglify', 'sassGO', 'serverGO', 'watch']);
