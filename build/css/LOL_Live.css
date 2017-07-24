@@ -1,51 +1,47 @@
+
 body {
-    margin: 0;
-    font-size: 10px;
-    max-width: 1920px;
-    background-color: black;
-    font-family: "微軟正黑體";
+  margin: 0;
+  color: white;
+  font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+  background-image: url("/img/a2.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+#body .col:hover{
+    box-shadow: 10px 10px 5px rgba(0,0, 0, 0.3);
+    background:#f0f0f0;
 }
 
-#Page {
-    
-    max-width: 960px;
-    max-height: 720px;
-    display: block;
-    margin: 0 auto;
-   
-}
+#body {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); }
 
-#Page .HLive {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#Page .Live {
-        margin: 25;  
-    background-color: #032B43;
-     margin-right:7%;
-    max-width: 200px;
-    display: inline-block;
-}
-
-#Page .Liveimg img {
-    width: 200px;
-    height: 150px;
-}
-
-#Page .Livedata {
-    height: 100%;
-    margin-right:0%;
-    -webkit-text-fill-color: wheat;
-    max-height: 50; 
-    margin: 0 0 0 0;
-    display: inline-block;
-}
-
-#Page .Livedata img {
-border-radius:50%;
-    width: 50px;
-    height: 50px;
-    
-}
+.row {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center; }
+  .row .col {
+    transition:.5s;
+    margin-left: 40px; }
+    .row .col .Twitchimg {
+      width: 300px;
+      height: 180px; }
+      .row .col .Twitchimg img {
+        width: 100%;
+        height: 100%; }
+    .row .col .Streamer {
+      width: 300px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex; }
+      .row .col .Streamer .DaPicImg {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .row .col .Streamer .DaPicImg img {
+          border-radius: 50%;
+          width: 60px;
+          height: 60px; }
+      .row .col .Streamer .Streamtext .name {
+        font-size: 2em;
+        height: 50%; }
