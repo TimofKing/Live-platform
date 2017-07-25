@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-image: url("LOLimg.jpg");
+  background-image: url("../img/LOLimg.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
