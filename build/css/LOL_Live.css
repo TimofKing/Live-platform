@@ -1,47 +1,58 @@
-
-body {
+body{
   margin: 0;
-  color: white;
-  font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
-  background-image: url("/img/a2.jpg");
+  background-image: url("LOLimg.jpg");
   background-size: cover;
-  background-attachment: fixed; }
-#body .col:hover{
-    box-shadow: 10px 10px 5px rgba(0,0, 0, 0.3);
-    background:#f0f0f0;
+  background-attachment: fixed;
+  font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+  color: white;
 }
-
-#body {
+#LOLLive .col:hover{
+    box-shadow: 0 0 3em black;
+    filter: brightness(1.3);
+}
+#LOLLive{
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.row {
-  padding-top: 40px;
+  background-color:rgba(0,0,0,0.5)
+}
+.row{
+  padding-top: 50px;
+  justify-content: center; 
   display: flex;
-  justify-content: center; }
-  .row .col {
-    transition:.5s;
-    margin-left: 40px; }
-    .row .col .Twitchimg {
-      width: 300px;
-      height: 180px; }
-      .row .col .Twitchimg img {
-        width: 100%;
-        height: 100%; }
-    .row .col .Streamer {
-      width: 300px;
-      height: 80px;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex; }
-      .row .col .Streamer .DaPicImg {
-        width: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .row .col .Streamer .DaPicImg img {
-          border-radius: 50%;
-          width: 60px;
-          height: 60px; }
-      .row .col .Streamer .Streamtext .name {
-        font-size: 2em;
-        height: 50%; }
+}
+.row .col{
+  transition:.5s;
+  margin-left: 50px;
+}
+.col .Liveimg{
+  width: 300px;
+  height: 200px;
+}
+.Liveimg img{
+  width: 100%;
+  height: 100%;
+}
+.col .Streamer{
+  width: 300px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+.Streamer .Bighead{
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center
+}
+.Streamer .Bighead img{
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  
+}
+.Streamer .Streammsg .name{
+  height: 50%;
+  font-size: 24px;
+}
+  
+  
