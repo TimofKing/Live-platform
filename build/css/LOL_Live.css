@@ -8,7 +8,7 @@ body{
 }
 #LOLLive .col:hover{
     box-shadow: 0 0 3em black;
-    filter: brightness(1.3);
+    filter: brightness(1.5);
 }
 #LOLLive{
   min-height: 100vh;
@@ -53,6 +53,9 @@ body{
 .Streamer .Streammsg .name{
   height: 50%;
   font-size: 24px;
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
   
   
