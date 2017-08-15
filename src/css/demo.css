@@ -31,7 +31,7 @@ body {
 #Page .Livedata {
   height: 100%;
   margin-right: 0%;
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color: white;
   max-height: 50;
   margin: 0 0 0 0;
   display: inline-block; }
@@ -40,3 +40,5 @@ body {
   border-radius: 50%;
   width: 50px;
   height: 50px; }
+
+/*# sourceMappingURL=demo.css.map */
